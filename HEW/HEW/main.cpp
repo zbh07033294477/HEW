@@ -5,10 +5,9 @@
 #include "texture.h"
 #include "camera.h"
 #include "light.h"
-#include "field.h"
 #include "debugproc.h"
 #include <time.h>
-#include "block.h"
+
 
 
 #define _USE_MATH_DEFINES
@@ -237,11 +236,6 @@ bool Initialize(HINSTANCE hInst)
 	// ライトの初期化処理
 	Light_Initialize();
 
-	// 地面の初期化処理
-	Field_Initialize();
-	
-	//Block初期化
-	InitBlock();
 
 	return true;
 }
@@ -254,11 +248,6 @@ void Finalize(void)
 	// ライトの終了処理
 	Light_Finalize();
 
-	// 地面の終了処理
-	Field_Finalize();
-
-	//ブロックの終了処理
-	UninitBlock();
 
 	// テクスチャの解放
 	Texture_Release();
@@ -288,11 +277,7 @@ void Update(void)
 	// ライトの更新処理
 	Light_Update();
 
-	// 地面の更新処理
-	Field_Update();
 
-	//ブロック更新
-	UpdateBlock();
 
 }
 
@@ -311,11 +296,7 @@ void Draw(void)
 	// カメラの設定
 	Camera_SetCamera();
 
-	// 地面の描画処理
-	Field_Draw();
 
-//ブロック描画
-	DrawBlock();
 
 	// デバッグ表示の描画処理
 	if (g_bDispDebug)

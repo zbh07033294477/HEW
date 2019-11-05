@@ -1,0 +1,15 @@
+﻿  camera.cpp
+c:\users\user\documents\hew\hew\hew\main.h(4): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  debugproc.cpp
+c:\users\user\documents\hew\hew\hew\main.h(4): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  input.cpp
+  light.cpp
+c:\users\user\documents\hew\hew\hew\main.h(4): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  main.cpp
+c:\users\user\documents\hew\hew\hew\main.h(4): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  myDirect3D.cpp
+c:\users\user\documents\hew\hew\hew\mydirect3d.h(6): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  texture.cpp
+c:\users\user\documents\hew\hew\hew\texture.cpp(1): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  title.cpp
+  コードを生成中...

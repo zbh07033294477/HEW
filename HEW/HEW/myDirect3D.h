@@ -11,6 +11,6 @@ bool D3D_Initialize(HWND hWnd);
 
 // ゲームの終了処理
 void D3D_Finalize(void);
-
+S
 //Direct3DDeviceのゲッター
 LPDIRECT3DDEVICE9 GetD3DDevice();
